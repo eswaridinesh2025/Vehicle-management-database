@@ -1,0 +1,205 @@
+-- Sample rows captured from successful inserts in the supplied SQL*Plus log.
+-- Parent rows are inserted before rows that reference them.
+
+INSERT ALL
+  INTO CUSTOMER4 VALUES (1, 'Arun Kumar', '9876543210', 'arun@gmail.com', 'Chennai', 'TN01L123456')
+  INTO CUSTOMER4 VALUES (2, 'Priya Sharma', '9876543211', 'priya@gmail.com', 'Coimbatore', 'TN02L234567')
+  INTO CUSTOMER4 VALUES (3, 'Rahul Raj', '9876543212', 'rahul@gmail.com', 'Madurai', 'TN03L345678')
+  INTO CUSTOMER4 VALUES (4, 'Sneha Krishnan', '9876543213', 'sneha@gmail.com', 'Trichy', 'TN04L456789')
+  INTO CUSTOMER4 VALUES (5, 'Vikram Singh', '9876543214', 'vikram@gmail.com', 'Salem', 'TN05L567890')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO DRIVER VALUES (1, 'Karthikeyan Sudhakar', '8751786509', 'DL01BNC1564', DATE '2029-05-10', 'Chennai')
+  INTO DRIVER VALUES (2, 'Gauthaum Vishwanath', '8778725121', 'DL02ABN1059', DATE '2028-11-09', 'Madurai')
+  INTO DRIVER VALUES (3, 'Shyam Sarath', '9486456584', 'DL03ABJ1324', DATE '2030-01-08', 'Dindugal')
+  INTO DRIVER VALUES (4, 'Aaryan Ajit', '9606300418', 'DL03ABL1258', DATE '2027-03-09', 'Pune')
+  INTO DRIVER VALUES (5, 'Rohit Sowmian', '9597007896', 'DL03ABK8790', DATE '2028-12-08', 'Madurai')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO VEHICLE VALUES (1, 'TN01AB1234', 'Bike', 'Royal Enfield', 'Bear 650', 2022, 'Black', 'Active')
+  INTO VEHICLE VALUES (2, 'TN02CD5678', 'Bike', 'Yamaha', 'R3', 2024, 'Blue', 'Active')
+  INTO VEHICLE VALUES (3, 'TN03EF9012', 'Bike', 'Honda', 'GoldWing', 2020, 'White', 'Under Maintenance')
+  INTO VEHICLE VALUES (4, 'TN04GH3456', 'Bike', 'TVS', 'Apache RTR 160', 2018, 'Red', 'Active')
+  INTO VEHICLE VALUES (5, 'TN05IJ7890', 'Car', 'Toyota', 'Innova Crysta', 2019, 'White', 'Active')
+  INTO VEHICLE VALUES (6, 'TN06KL2345', 'Car', 'Hyundai', 'Creta', 2023, 'Grey', 'Active')
+  INTO VEHICLE VALUES (7, 'TN07MN6789', 'Car', 'Tata', 'Safari', 2021, 'Black', 'Accident Repair')
+  INTO VEHICLE VALUES (8, 'TN08OP0123', 'Car', 'Kia', 'Carnival', 2017, 'Silver', 'Active')
+  INTO VEHICLE VALUES (9, 'TN09QR4567', 'Truck', 'Tata', '407', 2016, 'Blue', 'Active')
+  INTO VEHICLE VALUES (10, 'TN10ST8901', 'Truck', 'Ashok Leyland', 'Dost', 2021, 'White', 'Under Maintenance')
+  INTO VEHICLE VALUES (11, 'TN11UV2345', 'Truck', 'Eicher', 'Pro 3015', 2019, 'Red', 'Active')
+  INTO VEHICLE VALUES (12, 'TN12WX6789', 'Truck', 'BharatBenz', '3123R', 2023, 'White', 'Active')
+  INTO VEHICLE VALUES (13, 'TN13YZ1234', 'Bus', 'Ashok Leyland', 'Viking', 2018, 'Red', 'Active')
+  INTO VEHICLE VALUES (14, 'TN14AB5678', 'Bus', 'Tata', 'Starbus', 2022, 'White', 'Active')
+  INTO VEHICLE VALUES (15, 'TN15CD9012', 'Bus', 'Volvo', '9400', 2015, 'Blue', 'Under Maintenance')
+  INTO VEHICLE VALUES (16, 'TN16EF3456', 'Bus', 'Eicher', 'Skyline Pro', 2020, 'Yellow', 'Inactive')
+  INTO VEHICLE VALUES (17, 'TN17GH7890', 'Bike', 'KTM', 'Duke 390', 2023, 'Orange', 'Active')
+  INTO VEHICLE VALUES (18, 'TN18IJ2345', 'Car', 'Honda', 'City', 2020, 'White', 'Active')
+  INTO VEHICLE VALUES (19, 'TN19KL6789', 'Truck', 'Ashok Leyland', 'Partner', 2022, 'Grey', 'Active')
+  INTO VEHICLE VALUES (20, 'TN20MN0123', 'Bus', 'Eicher', 'Skyline Pro E', 2021, 'Yellow', 'Active')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO SERVICE_CENTER VALUES (1, 'Chennai Auto Care', 'Chennai', '04440001001')
+  INTO SERVICE_CENTER VALUES (2, 'Madurai Vehicle Works', 'Madurai', '04524000102')
+  INTO SERVICE_CENTER VALUES (3, 'Dindigul Service Hub', 'Dindigul', '04514000103')
+  INTO SERVICE_CENTER VALUES (4, 'Pune Fleet Services', 'Pune', '02040001004')
+  INTO SERVICE_CENTER VALUES (5, 'Coimbatore Motors', 'Coimbatore', '04224000105')
+  INTO SERVICE_CENTER VALUES (6, 'Salem Truck Care', 'Salem', '04274000106')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO BIKE VALUES (1, 35.00, 17.00, 'Roadster', 648)
+  INTO BIKE VALUES (2, 29.00, 14.00, 'Sport', 321)
+  INTO BIKE VALUES (3, 15.00, 21.10, 'Touring', 1833)
+  INTO BIKE VALUES (4, 45.00, 12.00, 'Street', 159)
+  INTO BIKE VALUES (17, 28.00, 13.40, 'Sport', 373)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO CAR VALUES (5, 14.00, 55.00, 300.00, 7, 150, 'MPV')
+  INTO CAR VALUES (6, 17.00, 50.00, 433.00, 5, 160, 'SUV')
+  INTO CAR VALUES (7, 14.00, 50.00, 447.00, 7, 170, 'SUV')
+  INTO CAR VALUES (8, 13.00, 60.00, 540.00, 7, 200, 'MPV')
+  INTO CAR VALUES (18, 17.80, 40.00, 506.00, 5, 121, 'Sedan')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO TRUCK VALUES (9, 10.00, 60.00, 4500.00, 25.00, 'Light Truck')
+  INTO TRUCK VALUES (10, 12.00, 40.00, 1250.00, 10.00, 'Mini Truck')
+  INTO TRUCK VALUES (11, 8.00, 190.00, 15000.00, 40.00, 'Heavy Truck')
+  INTO TRUCK VALUES (12, 6.50, 215.00, 31000.00, 55.00, 'Heavy Truck')
+  INTO TRUCK VALUES (19, 12.00, 60.00, 2000.00, 18.00, 'Light Truck')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO BUS VALUES (13, 5.00, 185.00, 55, 'City Bus')
+  INTO BUS VALUES (14, 6.00, 160.00, 50, 'Double Decker')
+  INTO BUS VALUES (15, 3.50, 300.00, 45, 'Luxury Bus')
+  INTO BUS VALUES (16, 5.50, 180.00, 30, 'Mini Bus')
+  INTO BUS VALUES (20, 6.50, 180.00, 35, 'Mini Bus')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO VEHICLE_OWNERSHIP VALUES (1, 1, DATE '2022-06-15', DATE '2028-06-15')
+  INTO VEHICLE_OWNERSHIP VALUES (2, 2, DATE '2023-03-20', DATE '2029-03-20')
+  INTO VEHICLE_OWNERSHIP VALUES (3, 3, DATE '2021-08-10', DATE '2028-08-10')
+  INTO VEHICLE_OWNERSHIP VALUES (4, 4, DATE '2020-11-05', DATE '2029-11-05')
+  INTO VEHICLE_OWNERSHIP VALUES (5, 5, DATE '2019-07-12', DATE '2028-07-12')
+  INTO VEHICLE_OWNERSHIP VALUES (1, 6, DATE '2024-02-18', DATE '2029-02-18')
+  INTO VEHICLE_OWNERSHIP VALUES (2, 7, DATE '2023-09-25', DATE '2028-09-25')
+  INTO VEHICLE_OWNERSHIP VALUES (3, 8, DATE '2017-04-15', DATE '2029-04-15')
+  INTO VEHICLE_OWNERSHIP VALUES (4, 9, DATE '2016-12-10', DATE '2028-12-10')
+  INTO VEHICLE_OWNERSHIP VALUES (5, 10, DATE '2021-05-22', DATE '2029-05-22')
+  INTO VEHICLE_OWNERSHIP VALUES (1, 11, DATE '2019-10-30', DATE '2028-10-30')
+  INTO VEHICLE_OWNERSHIP VALUES (2, 12, DATE '2021-01-15', DATE '2029-01-15')
+  INTO VEHICLE_OWNERSHIP VALUES (3, 13, DATE '2018-06-20', DATE '2028-06-20')
+  INTO VEHICLE_OWNERSHIP VALUES (4, 14, DATE '2022-03-12', DATE '2029-03-12')
+  INTO VEHICLE_OWNERSHIP VALUES (5, 15, DATE '2020-08-05', DATE '2028-08-05')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO MAINTENANCE VALUES (1, 1, 1, DATE '2026-01-15', 'General Service', 'Engine oil change and routine inspection', 3500.00, DATE '2026-07-15')
+  INTO MAINTENANCE VALUES (2, 3, 3, DATE '2026-02-10', 'Repair', 'Brake and suspension repair', 5200.00, DATE '2026-08-10')
+  INTO MAINTENANCE VALUES (3, 7, 2, DATE '2026-03-05', 'Accident Repair', 'Body and bumper repair after accident', 18500.00, DATE '2026-09-05')
+  INTO MAINTENANCE VALUES (4, 10, 4, DATE '2026-03-20', 'General Service', 'Engine inspection and oil replacement', 7500.00, DATE '2026-09-20')
+  INTO MAINTENANCE VALUES (5, 15, 6, DATE '2026-04-12', 'General Service', 'Engine and transmission inspection', 12500.00, DATE '2026-10-12')
+  INTO MAINTENANCE VALUES (6, 5, 5, DATE '2026-04-25', 'General Service', 'Oil change, brake check and tyre inspection', 6000.00, DATE '2026-10-25')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO PAYMENT VALUES (1, 1, 1, DATE '2026-01-15', 3500.00, 'UPI', 'Paid')
+  INTO PAYMENT VALUES (2, 3, 2, DATE '2026-02-10', 5200.00, 'Card', 'Paid')
+  INTO PAYMENT VALUES (3, 7, 3, DATE '2026-03-05', 18500.00, 'UPI', 'Paid')
+  INTO PAYMENT VALUES (4, 10, 4, DATE '2026-03-20', 7500.00, 'Cash', 'Paid')
+  INTO PAYMENT VALUES (5, 15, 5, DATE '2026-04-12', 12500.00, 'Bank Transfer', 'Paid')
+  INTO PAYMENT VALUES (6, 5, 6, DATE '2026-04-25', 6000.00, 'Card', 'Paid')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO TRIP VALUES (1, 1, 1, 'Chennai', 'Pondicherry', TO_DATE('2026-08-01 08:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2026-08-01 11:00', 'YYYY-MM-DD HH24:MI'), 155.5)
+  INTO TRIP VALUES (2, 2, 2, 'Madurai', 'Dindigul', TO_DATE('2026-08-03 09:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2026-08-03 11:00', 'YYYY-MM-DD HH24:MI'), 65.0)
+  INTO TRIP VALUES (3, 4, 3, 'Dindigul', 'Chennai', TO_DATE('2026-08-05 06:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2026-08-05 13:00', 'YYYY-MM-DD HH24:MI'), 460.0)
+  INTO TRIP VALUES (4, 5, 4, 'Pune', 'Mumbai', TO_DATE('2026-08-07 08:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2026-08-07 11:00', 'YYYY-MM-DD HH24:MI'), 150.0)
+  INTO TRIP VALUES (5, 6, 5, 'Madurai', 'Chennai', TO_DATE('2026-08-10 07:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('2026-08-10 13:00', 'YYYY-MM-DD HH24:MI'), 460.0)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO WARRANTY VALUES (1, 1, 'Royal Enfield', 'Manufacturer', DATE '2024-06-15', DATE '2027-06-15', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (2, 2, 'Yamaha', 'Manufacturer', DATE '2024-03-20', DATE '2027-03-20', 'Engine and electrical systems', 'Active')
+  INTO WARRANTY VALUES (3, 3, 'Honda', 'Manufacturer', DATE '2024-08-10', DATE '2027-08-10', 'Engine and major components', 'Active')
+  INTO WARRANTY VALUES (4, 4, 'TVS', 'Manufacturer', DATE '2024-11-05', DATE '2027-11-05', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (5, 5, 'Toyota', 'Manufacturer', DATE '2024-07-12', DATE '2027-07-12', 'Engine and electrical systems', 'Active')
+  INTO WARRANTY VALUES (6, 6, 'Hyundai', 'Manufacturer', DATE '2024-02-18', DATE '2027-02-18', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (7, 7, 'Tata', 'Manufacturer', DATE '2024-09-25', DATE '2027-09-25', 'Engine and major components', 'Active')
+  INTO WARRANTY VALUES (8, 8, 'Kia', 'Manufacturer', DATE '2024-04-15', DATE '2027-12-15', 'Engine, transmission and electrical systems', 'Active')
+  INTO WARRANTY VALUES (9, 9, 'Tata', 'Manufacturer', DATE '2025-01-10', DATE '2028-01-10', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (10, 10, 'Ashok Leyland', 'Manufacturer', DATE '2024-05-22', DATE '2028-05-22', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (11, 11, 'Eicher', 'Manufacturer', DATE '2024-10-30', DATE '2028-10-30', 'Engine and drivetrain', 'Active')
+  INTO WARRANTY VALUES (12, 12, 'BharatBenz', 'Manufacturer', DATE '2024-01-15', DATE '2028-01-15', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (13, 13, 'Ashok Leyland', 'Manufacturer', DATE '2024-06-20', DATE '2028-06-20', 'Engine and drivetrain', 'Active')
+  INTO WARRANTY VALUES (14, 14, 'Tata', 'Manufacturer', DATE '2024-03-12', DATE '2028-03-12', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (15, 15, 'Volvo', 'Manufacturer', DATE '2024-08-05', DATE '2028-08-05', 'Engine, transmission and electrical systems', 'Active')
+  INTO WARRANTY VALUES (16, 16, 'Eicher', 'Manufacturer', DATE '2024-10-18', DATE '2028-10-18', 'Engine and drivetrain', 'Active')
+  INTO WARRANTY VALUES (17, 17, 'KTM', 'Manufacturer', DATE '2024-09-10', DATE '2027-09-10', 'Engine and transmission', 'Active')
+  INTO WARRANTY VALUES (18, 18, 'Honda', 'Manufacturer', DATE '2024-05-18', DATE '2028-05-18', 'Engine and electrical systems', 'Active')
+  INTO WARRANTY VALUES (19, 19, 'Ashok Leyland', 'Manufacturer', DATE '2024-11-25', DATE '2028-11-25', 'Engine and drivetrain', 'Active')
+  INTO WARRANTY VALUES (20, 20, 'Eicher', 'Manufacturer', DATE '2024-01-12', DATE '2028-01-12', 'Engine and drivetrain', 'Active')
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO ACCIDENT VALUES (1, 1, 1, DATE '2026-02-15', 'Chennai', 'Minor bumper damage', 12000)
+  INTO ACCIDENT VALUES (2, 4, 3, DATE '2026-03-20', 'Dindigul', 'Front bumper damaged', 25000)
+  INTO ACCIDENT VALUES (3, 7, 2, DATE '2026-05-10', 'Madurai', 'Rear bumper damaged', 18000)
+  INTO ACCIDENT VALUES (4, 10, 4, DATE '2026-06-25', 'Pune', 'Side door damage', 15000)
+  INTO ACCIDENT VALUES (5, 15, 5, DATE '2026-07-18', 'Chennai', 'Front bumper damaged', 22000)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO INSURANCE VALUES (1, 1, 'POL10001', 'ICICI Lombard', DATE '2026-06-15', DATE '2027-06-15', 12500)
+  INTO INSURANCE VALUES (2, 2, 'POL10002', 'HDFC ERGO', DATE '2026-03-20', DATE '2027-03-20', 14000)
+  INTO INSURANCE VALUES (3, 3, 'POL10003', 'Bajaj Allianz', DATE '2026-08-10', DATE '2027-08-10', 15000)
+  INTO INSURANCE VALUES (4, 4, 'POL10004', 'Tata AIG', DATE '2026-05-05', DATE '2027-05-05', 12000)
+  INTO INSURANCE VALUES (5, 5, 'POL10005', 'SBI General', DATE '2026-07-12', DATE '2027-07-12', 28000)
+  INTO INSURANCE VALUES (6, 6, 'POL10006', 'ICICI Lombard', DATE '2026-02-18', DATE '2027-02-18', 26000)
+  INTO INSURANCE VALUES (7, 7, 'POL10007', 'HDFC ERGO', DATE '2026-09-25', DATE '2027-09-25', 30000)
+  INTO INSURANCE VALUES (8, 8, 'POL10008', 'Bajaj Allianz', DATE '2026-04-15', DATE '2027-12-15', 32000)
+  INTO INSURANCE VALUES (9, 9, 'POL10009', 'Tata AIG', DATE '2026-12-10', DATE '2027-12-10', 35000)
+  INTO INSURANCE VALUES (10, 10, 'POL10010', 'SBI General', DATE '2026-05-22', DATE '2028-05-22', 38000)
+  INTO INSURANCE VALUES (11, 11, 'POL10011', 'ICICI Lombard', DATE '2026-10-30', DATE '2027-10-30', 40000)
+  INTO INSURANCE VALUES (12, 12, 'POL10012', 'HDFC ERGO', DATE '2026-01-15', DATE '2028-01-15', 42000)
+  INTO INSURANCE VALUES (13, 13, 'POL10013', 'Bajaj Allianz', DATE '2026-06-20', DATE '2028-06-20', 48000)
+  INTO INSURANCE VALUES (14, 14, 'POL10014', 'Tata AIG', DATE '2026-03-12', DATE '2028-03-12', 52000)
+  INTO INSURANCE VALUES (15, 15, 'POL10015', 'SBI General', DATE '2026-08-05', DATE '2028-08-05', 60000)
+  INTO INSURANCE VALUES (16, 16, 'POL10016', 'ICICI Lombard', DATE '2026-10-18', DATE '2028-10-18', 58000)
+  INTO INSURANCE VALUES (17, 17, 'POL10017', 'HDFC ERGO', DATE '2026-09-10', DATE '2027-09-10', 13500)
+  INTO INSURANCE VALUES (18, 18, 'POL10018', 'Bajaj Allianz', DATE '2026-05-18', DATE '2027-05-18', 27000)
+  INTO INSURANCE VALUES (19, 19, 'POL10019', 'Tata AIG', DATE '2026-11-25', DATE '2028-11-25', 36000)
+  INTO INSURANCE VALUES (20, 20, 'POL10020', 'SBI General', DATE '2026-01-12', DATE '2028-01-12', 45000)
+SELECT 1 FROM DUAL;
+
+INSERT ALL
+  INTO FUEL_RECORD VALUES (1, 1, DATE '2026-08-01', 'Petrol', 12.5, 1250, 12500)
+  INTO FUEL_RECORD VALUES (2, 2, DATE '2026-08-02', 'Petrol', 10, 1000, 18200)
+  INTO FUEL_RECORD VALUES (3, 3, DATE '2026-08-03', 'Petrol', 15, 1500, 9800)
+  INTO FUEL_RECORD VALUES (4, 4, DATE '2026-08-04', 'Petrol', 8.5, 850, 22500)
+  INTO FUEL_RECORD VALUES (5, 5, DATE '2026-08-05', 'Diesel', 35, 3000, 15700)
+  INTO FUEL_RECORD VALUES (6, 6, DATE '2026-08-06', 'Diesel', 30, 2550, 19800)
+  INTO FUEL_RECORD VALUES (7, 7, DATE '2026-08-07', 'Diesel', 40, 3400, 24500)
+  INTO FUEL_RECORD VALUES (8, 8, DATE '2026-08-08', 'Diesel', 45, 3825, 31200)
+  INTO FUEL_RECORD VALUES (9, 9, DATE '2026-08-09', 'Diesel', 50, 4250, 45600)
+  INTO FUEL_RECORD VALUES (10, 10, DATE '2026-08-10', 'Diesel', 55, 4675, 52300)
+  INTO FUEL_RECORD VALUES (11, 11, DATE '2026-08-11', 'Diesel', 60, 5100, 48700)
+  INTO FUEL_RECORD VALUES (12, 12, DATE '2026-08-12', 'Diesel', 65, 5525, 60100)
+  INTO FUEL_RECORD VALUES (13, 13, DATE '2026-08-13', 'Diesel', 70, 5950, 72500)
+  INTO FUEL_RECORD VALUES (14, 14, DATE '2026-08-14', 'Diesel', 65, 5525, 68400)
+  INTO FUEL_RECORD VALUES (15, 15, DATE '2026-08-15', 'Diesel', 75, 6375, 81200)
+  INTO FUEL_RECORD VALUES (16, 16, DATE '2026-08-16', 'Diesel', 70, 5950, 75600)
+  INTO FUEL_RECORD VALUES (17, 17, DATE '2026-08-17', 'Petrol', 11, 1100, 14300)
+  INTO FUEL_RECORD VALUES (18, 18, DATE '2026-08-18', 'Petrol', 30, 3000, 22100)
+  INTO FUEL_RECORD VALUES (19, 19, DATE '2026-08-19', 'Diesel', 45, 3825, 49800)
+  INTO FUEL_RECORD VALUES (20, 20, DATE '2026-08-20', 'Diesel', 60, 5100, 63500)
+SELECT 1 FROM DUAL;
+
+COMMIT;

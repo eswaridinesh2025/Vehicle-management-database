@@ -1,0 +1,25 @@
+SET ECHO OFF
+SET VERIFY OFF
+SET FEEDBACK ON
+WHENEVER SQLERROR EXIT SQL.SQLCODE
+WHENEVER OSERROR EXIT FAILURE
+
+ALTER SESSION SET CONTAINER = XEPDB1;
+ACCEPT app_password CHAR PROMPT 'Enter a new VEHICLE_APP password (12-128 letters and digits): ' HIDE
+
+DECLARE
+	v_password VARCHAR2(128) := '&&app_password';
+BEGIN
+	IF NOT REGEXP_LIKE(v_password, '^[A-Za-z0-9]{12,128}$') THEN
+		RAISE_APPLICATION_ERROR(-20001, 'Password must be 12-128 letters and digits.');
+	END IF;
+
+	EXECUTE IMMEDIATE
+		'ALTER USER VEHICLE_APP IDENTIFIED BY "' || v_password || '" ACCOUNT UNLOCK';
+END;
+/
+
+UNDEFINE app_password
+
+PROMPT VEHICLE_APP password updated and account unlocked.
+EXIT SUCCESS
